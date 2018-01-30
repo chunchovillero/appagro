@@ -1,0 +1,470 @@
+<nav class="navbar top navbar-fixed" role="navigation" style="margin-bottom: 30px;">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="button blue" style="margin-top:15px;" [routerLink]="['/menu']">Regresar</a>
+    </div>
+  </div>
+</nav>
+<!--<div class="row">-->
+
+  <!--<iframe class="col-sm-12" style="padding-top: 30px;min-height: 850px;border: none" src="https://sebastian254.typeform.com/to/ZB4cKB"></iframe>-->
+
+  <div class="container" >
+    <div class="row">
+      <section>
+        <div class="wizard">
+          <div class="wizard-inner">
+            <div class="connecting-line"></div>
+            <ul class="nav nav-tabs" role="tablist">
+
+              <li role="presentation" class="active">
+                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab">
+                  <span class="round-tab">
+                    <span>1</span>
+                  </span>
+                </a>
+              </li>
+
+              <li role="presentation" class="disabled">
+                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab">
+                  <span class="round-tab">
+                    <span>2</span>
+                  </span>
+                </a>
+              </li>
+              <li role="presentation" class="disabled">
+                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab">
+                  <span class="round-tab">
+                    <span>3</span>
+                  </span>
+                </a>
+              </li>
+
+              <li role="presentation" class="disabled">
+                <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab">
+                  <span class="round-tab">
+                    <span>4</span>
+                  </span>
+                </a>
+              </li>
+              <li role="presentation" class="disabled">
+                <a href="#step5" data-toggle="tab" aria-controls="step5" role="tab">
+                  <span class="round-tab">
+                    <span>5</span>
+                  </span>
+                </a>
+              </li>
+
+              <li role="presentation" class="disabled">
+                <a href="#step6" data-toggle="tab" aria-controls="step6" role="tab">
+                  <span class="round-tab">
+                    <span>6</span>
+                  </span>
+                </a>
+              </li>
+
+              <li role="presentation" class="disabled">
+                <a href="#step7" data-toggle="tab" aria-controls="step7" role="tab">
+                  <span class="round-tab">
+                    <span>7</span>
+                  </span>
+                </a>
+              </li>
+
+              <li role="presentation" class="disabled">
+                <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab">
+                  <span class="round-tab">
+                    <i class="glyphicon glyphicon-ok"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form #formevaluar="ngForm" (ngSubmit)="onSubmit(respuesta2.value, respuesta7.value)">
+            <div class="tab-content">
+
+
+              <div class="tab-pane active" role="tabpanel" id="step1" >
+                <div class="step1" style="height: 300px">
+                  <div class="row">
+
+                    <div class="col-xs-12 form-inline">
+                      <h3>¿Qué secciones visitas frecuentemente? Puedes marcar más de una
+                      opción.</h3><hr/>
+                      <div class="[ form-group ]">
+                        <input type="radio" [(ngModel)]="evaluar.respuesta1" #respuesta1="ngModel" name="respuesta1" value="Liquidaciones" id="respuesta1a" autocomplete="off" />
+                        <div class="[ btn-group ]">
+                          <label for="respuesta1a" class="[ btn btn-warning ]">
+                            <span class="[ glyphicon glyphicon-ok ]"></span>
+                            <span> </span>
+                          </label>
+                          <label for="respuesta1a" class="[ btn btn-default active ]">
+                            Liquidaciones
+                          </label>
+                        </div>
+                      </div>
+                      <div class="[ form-group ]" style="padding-left: 15px;">
+                        <input type="radio" [(ngModel)]="evaluar.respuesta1" #respuesta1="ngModel" name="respuesta1" value="Beneficios" id="respuesta1b" autocomplete="off" />
+                        <div class="[ btn-group ]">
+                          <label for="respuesta1b" class="[ btn btn-warning ]">
+                            <span class="[ glyphicon glyphicon-ok ]"></span>
+                            <span> </span>
+                          </label>
+                          <label for="respuesta1b" class="[ btn btn-default active ]">
+                            Beneficios
+                          </label>
+                        </div>
+                      </div>
+                      <div class="[ form-group ]" style="padding-left: 15px;">
+                        <input type="radio" [(ngModel)]="evaluar.respuesta1" #respuesta1="ngModel" name="respuesta1" value="Pago de servicios" id="respuesta1d" autocomplete="off" />
+                        <div class="[ btn-group ]">
+                          <label for="respuesta1d" class="[ btn btn-warning ]">
+                            <span class="[ glyphicon glyphicon-ok ]"></span>
+                            <span> </span>
+                          </label>
+                          <label for="respuesta1d" class="[ btn btn-default active ]">
+                            Pago de servicios
+                          </label>
+                        </div>
+                      </div>
+                      <div class="[ form-group ]" style="padding-left: 15px;">
+                        <input type="radio" [(ngModel)]="evaluar.respuesta1" #respuesta1="ngModel" name="respuesta1" id="respuesta1e" value="Todas" autocomplete="off" />
+                        <div class="[ btn-group ]">
+                          <label for="respuesta1e" class="[ btn btn-warning ]">
+                            <span class="[ glyphicon glyphicon-ok ]"></span>
+                            <span> </span>
+                          </label>
+                          <label for="respuesta1e" class="[ btn btn-default active ]">
+                            Todas
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="list-inline pull-right">
+                  <li><button type="button" class="btn btn-primary next-step">Continuar</button></li>
+                </ul>
+              </div>
+
+              <div class="tab-pane" role="tabpanel" id="step2">
+                <div class="step2" style="height: 300px">
+                  <div class="step_2">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h3>¿Qué otra información te gustaría ver en el módulo?</h3><hr/>
+                        <div class="col-md-12 form-group">
+                          <textarea id="ipad" [(ngModel)]="evaluar.respuesta2" #respuesta2 name="respuesta2" placeholder="Escriba aquí" class="form-control" rows="4"  autocomplete="off" _originaltype="text" style="width: 900px;font-size: 30px"></textarea>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="list-inline pull-right">
+                  <li><button type="button" class="btn btn-default sebi prev-step">Anterior</button></li>
+                  <li><button type="button" class="btn btn-primary next-step">Continuar</button></li>
+                </ul>
+              </div>
+
+
+
+              <div class="tab-pane container" role="tabpanel" id="step3">
+                <div class="step3" style="height: 300px">
+                  <div class="row">
+
+                    <div class="col-xs-12 form-inline">
+                      <h3>¿Te resulta fácil navegar  por el módulo?</h3><hr/>
+                      <div class="[ form-group ]">
+                        <input type="radio" [(ngModel)]="evaluar.respuesta3" #respuesta3="ngModel" name="respuesta3" value="Si" id="respuesta3d" autocomplete="off" />
+                        <div class="[ btn-group ]">
+                          <label for="respuesta3d" class="[ btn btn-warning ]">
+                            <span class="[ glyphicon glyphicon-ok ]"></span>
+                            <span> </span>
+                          </label>
+                          <label for="respuesta3d" class="[ btn btn-default active ]">
+                            Si
+                          </label>
+                        </div>
+                      </div>
+                      <div class="[ form-group ]" style="padding-left: 15px;">
+                        <input type="radio" [(ngModel)]="evaluar.respuesta3" #respuesta3="ngModel" name="respuesta3" value="No" id="fancy-checkbox-primary3a" autocomplete="off" />
+                        <div class="[ btn-group ]">
+                          <label for="fancy-checkbox-primary3a" class="[ btn btn-warning ]">
+                            <span class="[ glyphicon glyphicon-ok ]"></span>
+                            <span> </span>
+                          </label>
+                          <label for="fancy-checkbox-primary3a" class="[ btn btn-default active ]">
+                            No
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <ul class="list-inline pull-right">
+                  <li><button type="button" class="btn btn-default prev-step">Anterior</button></li>
+                  <li><button type="button" class="btn btn-default next-step">Saltar</button></li>
+                  <li><button type="button" class="btn btn-primary btn-info-full next-step">Continuar</button></li>
+                </ul>
+              </div>
+
+              <div class="tab-pane" role="tabpanel" id="step4">
+                <div class="step4" style="height: 300px">
+                  <div class="col-md-12 form-inline">
+                    <h3>¿Se escucha bien el audio de los videos que se presentan?
+                    </h3><hr/>
+
+
+<div class="[ form-group ]" style="padding-left: 15px;">
+  <input type="radio" [(ngModel)]="evaluar.respuesta4" #respuesta4="ngModel" name="respuesta4"  value="Si" id="calidad_audio_si" autocomplete="off" />
+  <div class="[ btn-group ]"> 
+    <label for="calidad_audio_si" class="[ btn btn-warning ]">
+      <span class="[ glyphicon glyphicon-ok ]"></span>
+      <span> </span>
+    </label>
+    <label for="calidad_audio_si" class="[ btn btn-default active ]">
+      Si
+    </label>
+  </div>
+</div>
+
+<div class="[ form-group ]" style="padding-left: 15px;">
+  <input type="radio" [(ngModel)]="evaluar.respuesta4" #respuesta4="ngModel"  name="respuesta4" value="No" id="calidad_audio_no" autocomplete="off" />
+  <div class="[ btn-group ]">
+    <label for="calidad_audio_no" class="[ btn btn-warning ]">
+      <span class="[ glyphicon glyphicon-ok ]"></span>
+      <span> </span>
+    </label>
+    <label for="calidad_audio_no" class="[ btn btn-default active ]">
+      No
+    </label>
+  </div>
+</div>
+
+</div>
+
+
+
+</div>
+<ul class="list-inline pull-right">
+  <li><button type="button" class="btn btn-default prev-step">Anterior</button></li>
+  <li><button type="button" class="btn btn-default next-step">Saltar</button></li>
+  <li><button type="button" class="btn btn-primary btn-info-full next-step">Continuar</button></li>
+</ul>
+</div>
+
+<div class="tab-pane" role="tabpanel" id="step5">
+  <div class="step5" style="height: 300px">
+
+    <div class="col-md-12 form-inline">
+      <h3>¿La información entregada te sirve para tu trabajo diario?</h3>
+      <hr/>
+
+<!--<label class="col-md-12">
+<input type="radio" name="informacion_sirve" value="1"> SI
+</label>
+<label class="col-md-12">
+<input type="radio" name="informacion_sirve" value="0"> NO
+</label>-->
+
+<div class="[ form-group ]" style="padding-left: 15px;">
+  <input type="radio" [(ngModel)]="evaluar.respuesta5" #respuesta5="ngModel"  name="respuesta5"  value="Si" id="informacion_sirve_si" autocomplete="off" />
+  <div class="[ btn-group ]">
+    <label for="informacion_sirve_si" class="[ btn btn-warning ]">
+      <span class="[ glyphicon glyphicon-ok ]"></span>
+      <span> </span>
+    </label>
+    <label for="informacion_sirve_si" class="[ btn btn-default active ]">
+      Si
+    </label>
+  </div>
+</div>
+
+<div class="[ form-group ]" style="padding-left: 15px;">
+  <input type="radio"[(ngModel)]="evaluar.respuesta5" #respuesta5="ngModel"  name="respuesta5" value="No" id="informacion_sirve_no" autocomplete="off" />
+  <div class="[ btn-group ]">
+    <label for="informacion_sirve_no" class="[ btn btn-warning ]">
+      <span class="[ glyphicon glyphicon-ok ]"></span>
+      <span> </span>
+    </label>
+    <label for="informacion_sirve_no" class="[ btn btn-default active ]">
+      No
+    </label>
+  </div>
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+<ul class="list-inline pull-right">
+  <li><button type="button" class="btn btn-default prev-step">Anterior</button></li>
+  <li><button type="button" class="btn btn-default next-step">Saltar</button></li>
+  <li><button type="button" class="btn btn-primary btn-info-full next-step">Continuar</button></li>
+</ul>
+</div>
+
+<div class="tab-pane" role="tabpanel" id="step6">
+  <div class="step6" style="height: 300px">
+    <div class="row">
+      <div class="col-md-12 form-inline">
+
+        <h3>¿ Qué nota le pondrías al módulo? Siendo 1 la nota mínima y 7 la máxima.</h3><hr/>
+        <div class="[ form-group ]" style="padding-left: 15px;">
+  <input type="radio" [(ngModel)]="evaluar.respuesta6" #respuesta6="ngModel"  name="respuesta6"  value="1" id="61" autocomplete="off" />
+  <div class="[ btn-group ]">
+    <label for="61" class="[ btn btn-warning ]">
+      <span class="[ glyphicon glyphicon-ok ]"></span>
+      <span> </span>
+    </label>
+    <label for="61" class="[ btn btn-default active ]">
+      1
+    </label>
+  </div>
+</div>
+
+<div class="[ form-group ]" style="padding-left: 15px;">
+  <input type="radio" [(ngModel)]="evaluar.respuesta6" #respuesta6="ngModel"  name="respuesta6"  value="2" id="62" autocomplete="off" />
+  <div class="[ btn-group ]">
+    <label for="62" class="[ btn btn-warning ]">
+      <span class="[ glyphicon glyphicon-ok ]"></span>
+      <span> </span>
+    </label>
+    <label for="62" class="[ btn btn-default active ]">
+      2
+    </label>
+  </div>
+</div>
+
+<div class="[ form-group ]" style="padding-left: 15px;">
+  <input type="radio" [(ngModel)]="evaluar.respuesta6" #respuesta6="ngModel"  name="respuesta6"  value="3" id="63" autocomplete="off" />
+  <div class="[ btn-group ]">
+    <label for="63" class="[ btn btn-warning ]">
+      <span class="[ glyphicon glyphicon-ok ]"></span>
+      <span> </span>
+    </label>
+    <label for="63" class="[ btn btn-default active ]">
+      3
+    </label>
+  </div>
+</div>
+
+<div class="[ form-group ]" style="padding-left: 15px;">
+  <input type="radio" [(ngModel)]="evaluar.respuesta6" #respuesta6="ngModel"  name="respuesta6"  value="4" id="64" autocomplete="off" />
+  <div class="[ btn-group ]">
+    <label for="64" class="[ btn btn-warning ]">
+      <span class="[ glyphicon glyphicon-ok ]"></span>
+      <span> </span>
+    </label>
+    <label for="64" class="[ btn btn-default active ]">
+      4
+    </label>
+  </div>
+</div>
+
+<div class="[ form-group ]" style="padding-left: 15px;">
+  <input type="radio" [(ngModel)]="evaluar.respuesta6" #respuesta6="ngModel"  name="respuesta6"  value="5" id="65" autocomplete="off" />
+  <div class="[ btn-group ]">
+    <label for="65" class="[ btn btn-warning ]">
+      <span class="[ glyphicon glyphicon-ok ]"></span>
+      <span> </span>
+    </label>
+    <label for="65" class="[ btn btn-default active ]">
+      5
+    </label>
+  </div>
+</div>
+
+<div class="[ form-group ]" style="padding-left: 15px;">
+  <input type="radio" [(ngModel)]="evaluar.respuesta6" #respuesta6="ngModel"  name="respuesta6"  value="6" id="66" autocomplete="off" />
+  <div class="[ btn-group ]">
+    <label for="66" class="[ btn btn-warning ]">
+      <span class="[ glyphicon glyphicon-ok ]"></span>
+      <span> </span>
+    </label>
+    <label for="66" class="[ btn btn-default active ]">
+      6
+    </label>
+  </div>
+</div>
+
+<div class="[ form-group ]" style="padding-left: 15px;">
+  <input type="radio" [(ngModel)]="evaluar.respuesta6" #respuesta6="ngModel"  name="respuesta6"  value="7" id="67" autocomplete="off" />
+  <div class="[ btn-group ]">
+    <label for="67" class="[ btn btn-warning ]">
+      <span class="[ glyphicon glyphicon-ok ]"></span>
+      <span> </span>
+    </label>
+    <label for="67" class="[ btn btn-default active ]">
+      7
+    </label>
+  </div>
+</div>
+
+
+      </div>
+
+
+
+    </div>
+  </div>
+  <ul class="list-inline pull-right" style="padding-top: 30px;">
+    <li><button type="button" class="btn btn-default prev-step">Anterior</button></li>
+    <li><button type="button" class="btn btn-default next-step">Saltar</button></li>
+    <li><button type="button" class="btn btn-primary btn-info-full next-step">Continuar</button></li>
+  </ul>
+</div>
+
+
+
+<div class="tab-pane" role="tabpanel" id="step7">
+  <div class="step7" style="height: 300px">
+    <div class="row">
+
+
+      <div class="col-md-12">
+        <h3>Sugerencias</h3><hr/>
+
+        <div class="col-md-12 form-group">
+          <textarea [(ngModel)]="evaluar.respuesta7" #respuesta7 name="respuesta7" placeholder="Escriba aquí" class="form-control" rows="4"  autocomplete="off" style="width: 1130px;;font-size: 30px"></textarea>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <ul class="list-inline pull-right">
+    <li><button type="submit" name="Enviar" class="btn btn-primary next-step" id="btn_enviar_encuesta">Enviar</button></li>
+  </ul>
+</div>
+
+<!--<div class="tab-pane" role="tabpanel" id="complete">
+<div class="step44">
+<h5>Completed</h5>
+<li><button name="Enviar" class="btn btn-primary next-step" id="btn_enviar_encuesta2">Enviar</button> </li>
+
+</div>
+</div>-->
+
+
+
+<div class="clearfix"></div>
+</div>
+</form>
+</div>
+</section>
+</div>
+</div>
+
+<!--</div>-->
+
+<nav class="navbar bottom navbar-fixed-bottom" role="navigation">
+  <p>&copy;2017 Agrosuper. Todos los derechos reservados.</p>
+</nav>

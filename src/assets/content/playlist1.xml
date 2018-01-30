@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ul>
+	<li data-thumb-source="content/thumbnails/small-fwd.jpg" data-video-source="content/videos/fwd.mp4,content/videos/fwd-mobile.mp4" data-poster-source="content/posters/mp4-poster.jpg,content/posters/mp4-poster-mobile.jpg" data-title="FWD Presentation Video" data-downloadable="no"/> 
+	 
+	<li data-thumb-source="content/thumbnails/small-r3dcov.jpg" data-video-source="content/videos/r3dcov.mp4,content/videos/r3dcov-mobile.mp4" data-poster-source="content/posters/mp4-poster.jpg,content/posters/mp4-poster-mobile.jpg" data-title="Royal 3D Coverflow" data-downloadable="no"/> 
+	
+	<li data-thumb-source="content/thumbnails/small-inna.jpg" data-video-source="lS22HZ21uKM" data-poster-source="content/posters/youtube-poster.jpg,content/posters/youtube-poster-mobile.jpg" data-title="INNA feat. Yandel - In Your Eyes" data-downloadable="no"/> 
+	 
+	<li data-thumb-source="content/thumbnails/small-grid.jpg" data-video-source="content/videos/grid.mp4,content/videos/grid-mobile.mp4" data-poster-source="content/posters/mp4-poster.jpg,content/posters/mp4-poster-mobile.jpg" data-title="Horizontal Gridfolio Pro" data-downloadable="no"/> 
+	 
+	<li data-thumb-source="content/thumbnails/small-lora.jpg" data-video-source="oIHyVibVwVA" data-poster-source="content/posters/youtube-poster.jpg,content/posters/youtube-poster-mobile.jpg" data-title="Lora - puisor" data-downloadable="no"/> 
+	 
+	<li data-thumb-source="content/thumbnails/small-corina.jpg" data-video-source="iOl3WnsY0sg" data-poster-source="content/posters/youtube-poster.jpg,content/posters/youtube-poster-mobile.jpg" data-title="Corina - miss boboc" data-downloadable="no"/> 
+	
+	<li data-thumb-source="content/thumbnails/small-u3dcar.jpg" data-video-source="content/videos/u3dcar.mp4,content/videos/u3dcar-mobile.mp4" data-poster-source="content/posters/mp4-poster.jpg,content/posters/mp4-poster-mobile.jpg" data-title="Ultimate 3D Carousel" data-downloadable="no"/> 
+
+</ul>

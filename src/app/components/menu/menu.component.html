@@ -1,0 +1,49 @@
+<nav class="navbar top navbar-fixed" role="navigation">
+  <div class="container">
+  </div>
+</nav>
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="logo">
+      <img class="img-center" src="assets/img/logo.png" alt="logo" >
+    </div>
+  </div>
+
+  <div class="row" id="mainmenu">
+          <div *ngFor="let pagina of _menuService.paginas" style="width:14.285714285714%" class="col-lg-{{_menuService.lg}} col-sm-{{_menuService.sm}} text-center">
+
+         <div *ngIf="pagina.tipo.nombre == 'Iframe'">
+        <a [routerLink]="['/servipag',pagina.id]"><img class="img-circle img-responsive img-center" src="{{ apiUrl }}uploads/{{ pagina.imagen }}" alt=""></a>
+      </div>
+
+      <div *ngIf="pagina.tipo.nombre == 'Videos'">
+        <a [routerLink]="['/videos',pagina.id]"><img class="img-circle img-responsive img-center" src="{{ apiUrl }}uploads/{{ pagina.imagen }}" alt=""></a>
+      </div>
+
+      <div *ngIf="pagina.tipo.nombre == 'Encuesta'">
+        <a [routerLink]="['/evaluar',pagina.id]"><img class="img-circle img-responsive img-center" src="{{ apiUrl }}uploads/{{ pagina.imagen }}" alt=""></a>
+      </div>
+
+      <div *ngIf="pagina.tipo.nombre == 'Buzon'">
+        <a [routerLink]="['/buzon',pagina.id]"><img class="img-circle img-responsive img-center" src="{{ apiUrl }}uploads/{{ pagina.imagen }}" alt=""></a>
+      </div>
+      
+      <h3>{{pagina.nombre}}</h3>
+    </div>
+  </div>
+</div>
+<nav class="navbar bottom navbar-fixed-bottom" role="navigation">
+  <p>&copy;2017 Agrosuper. Todos los derechos reservados.</p>
+</nav>
+<script>
+  $.backstretch([
+    "assets/img/pot-holder.jpg",
+    "assets/img/coffee.jpg",
+    "assets/img/dome.jpg"
+  ],{
+    fade: 750,
+    duration: 10000
+  });
+</script>
